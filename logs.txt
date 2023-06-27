@@ -1,0 +1,42 @@
+cmd1:
+Transaction sent: 0x14164b6fbf5499df096d877d40061af90dcce773d1b8a2f2840febe7f0660675
+  Gas price: 0.012844196 gwei   Gas limit: 2559546   Nonce: 4
+  AdvancedCollectible.constructor confirmed   Block: 7481815   Gas used: 2326860 (90.91%)
+  AdvancedCollectible deployed at: 0xd2DBf288c8dB1CfEBA36d6FBe200d911DCdB310f
+
+Waiting for https://api-goerli.etherscan.io/api to process contract...
+Verification submitted successfully. Waiting for result...
+Verification complete. Result: Pass - Verified
+Transaction sent: 0x557d0055aa156467c9fd21ce917d33ee3641ba13cb1cfd5294c21d0a94d5799d
+  Gas price: 0.012844196 gwei   Gas limit: 56973   Nonce: 5
+  LinkToken.transfer confirmed   Block: 7481817   Gas used: 51794 (90.91%)
+
+Funded 0xd2DBf288c8dB1CfEBA36d6FBe200d911DCdB310f
+
+
+cmd 2:
+OpenseaNftProject is the active project.
+
+Running 'scripts\advanced_collectible\create_collectible.py::main'...
+Transaction sent: 0xce52544ae89b372cc940572436785dc14fc948424f36716c4024be801256a5e6
+  Gas price: 0.012844213 gwei   Gas limit: 38163   Nonce: 7
+  LinkToken.transfer confirmed   Block: 7481846   Gas used: 34694 (90.91%)
+
+Funded 0xd2DBf288c8dB1CfEBA36d6FBe200d911DCdB310f
+
+
+ File "C:\Users\Brendan\.local\pipx\venvs\eth-brownie\lib\site-packages\brownie\_cli\run.py", line 51, in main
+    return_value, frame = run(
+  File "C:\Users\Brendan\.local\pipx\venvs\eth-brownie\lib\site-packages\brownie\project\scripts.py", line 110, in run
+    return_value = f_locals[method_name](*args, **kwargs)
+  File ".\scripts\advanced_collectible\create_collectible.py", line 14, in main
+    transaction = advanced_collectible.createCollectible("None", {"from": dev})
+    return self.transact(*args)
+  File "C:\Users\Brendan\.local\pipx\venvs\eth-brownie\lib\site-packages\brownie\network\contract.py", line 1734, in transact
+    return tx["from"].transfer(
+  File "C:\Users\Brendan\.local\pipx\venvs\eth-brownie\lib\site-packages\brownie\network\account.py", line 644, in transfer
+    receipt, exc = self._make_transaction(
+  File "C:\Users\Brendan\.local\pipx\venvs\eth-brownie\lib\site-packages\brownie\network\account.py", line 727, in _make_transaction
+    raise VirtualMachineError(e) from None
+  File "C:\Users\Brendan\.local\pipx\venvs\eth-brownie\lib\site-packages\brownie\exceptions.py", line 93, in __init__
+    raise ValueError(str(exc)) from None
